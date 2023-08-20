@@ -1,0 +1,542 @@
+/* Turn off default settings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Replacing the standard selection */
+*::selection {
+  background-color: rgb(167, 109, 164);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+  cursor: url("../img/arrow.cur"), auto;
+}
+
+/* class="container" */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* filling */
+.maintextdiv {
+  width: 60%;
+  height: 76.5%;
+  margin-top: 11%;
+  margin-left: 6.5%;
+  text-align: center;
+  flex-grow: 1;
+  color: white;
+  font-family: "sans";
+  font-size: 1.37vw;
+}
+.maintextvlarm {
+  font-family: "minecraft";
+  color: white;
+  font-size: 3.743vw;
+  cursor: url(../img/ns.cur), auto;
+  margin-bottom: 2.5%;
+  text-shadow: 0vw 0vw 0.073vw black;
+}
+
+.art {
+  width: 44%;
+  height: 75.5%;
+  margin-top: 6%;
+  margin-right: 2%;
+  flex-grow: 1;
+}
+
+.art::before {
+  content: "";
+  position: absolute;
+  top: 10.5vw;
+  right: 4.5vw;
+  width: 33vw;
+  height: 33vw;
+  border: 0.439vw solid rgba(76, 76, 76, 0.7);
+  border-radius: 100%;
+  z-index: -1;
+  clip-path: polygon(0 0, 50% 0, 75% 100%, 0 100%);
+  backdrop-filter: blur(0.293vw);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.artimg {
+  width: 89%;
+  height: auto;
+  transform: scaleX(-1);
+  margin-left: 5%;
+  border-radius: 4.392vw;
+  margin-top: -10%;
+}
+
+.cursorns {
+  cursor: url(../img/ns.cur), auto;
+  text-shadow: 0vw 0vw 0.073vw black;
+}
+
+.buybutton {
+  background-color: red;
+  display: block;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 3%;
+  padding-top: 0.439vw;
+  padding-bottom: 0.439vw;
+  border-radius: 0.586vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.22vw solid rgba(223, 139, 219, 0.8);
+  transform: scale(1);
+  backdrop-filter: blur(0.146vw);
+  transition: all 0.3s ease-in-out;
+  cursor: url("../img/link.cur"), auto;
+}
+
+.buybutton:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 0.22vw solid rgba(223, 139, 219, 1);
+}
+
+.textbuy {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-size: 2.562vw;
+  padding: 0.586vw 5.124vw 0.586vw 5.124vw;
+  font-family: "sans";
+  transition: all 0.3s ease-in-out;
+  cursor: url("../img/link.cur"), auto;
+  text-shadow: 0vw 0vw 0.146vw black;
+}
+
+.buybutton:hover .textbuy {
+  color: rgb(255, 255, 255);
+}
+.textbuy::after {
+  content: "170₽/месяц";
+  color: rgb(245, 245, 245);
+  font-size: 0.878vw;
+  margin-left: -0.512vw;
+}
+
+/* pop-up tabble */
+.tabble {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+  width: 40.264vw;
+  height: 36.603vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 0.183vw solid rgb(223, 139, 219, 0.8);
+  backdrop-filter: blur(0.146vw);
+  border-radius: 0.732vw;
+  box-shadow: 0vw 0vw 0.22vw rgba(223, 139, 219, 0.8);
+  display: none;
+  animation: slide-in 0.5s forwards;
+  color: white;
+}
+@keyframes slide-in {
+  0% {
+    top: 35%;
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.073vw);
+  display: none;
+}
+.tabblediv {
+  border-right: 0.183vw solid rgb(223, 139, 219, 0.8);
+  box-shadow: 0vw 0vw 0.22vw rgba(223, 139, 219, 0.8);
+  width: 50%;
+  height: 100%;
+  font-family: "sans";
+}
+.tabblemaindiv {
+  box-shadow: 0vw 0vw 0.22vw rgba(223, 139, 219, 0.8);
+  border-bottom: 0.183vw solid rgb(223, 139, 219, 0.8);
+  text-align: center;
+  font-family: "minecraft";
+  font-size: 0.878vw;
+  padding: 0.732vw 0vw 0.732vw 0vw;
+}
+
+.tabblemaintext {
+  cursor: url(../img/ns.cur), auto;
+}
+.pricesdiv {
+  margin: 1.098vw 0.732vw 1.098vw 0.732vw;
+  padding: 0.146vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prices {
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.464vw;
+  padding-right: 77%;
+  z-index: 1;
+  text-align: left;
+  cursor: url(../img/link.cur), auto;
+}
+
+.prices:hover {
+  color: white;
+  transform: scale(1.02);
+}
+
+.value {
+  text-align: right;
+  font-size: 0.732vw;
+  padding-right: 0.146vw;
+  margin-left: -77%;
+}
+
+.tabblecontainer {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricetext {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.mainpricetextdiv {
+  box-shadow: 0vw 0vw 0.22vw rgba(223, 139, 219, 0.8);
+  border-bottom: 0.183vw solid rgb(223, 139, 219, 0.8);
+  text-align: center;
+  font-family: "minecraft";
+  font-size: 0.878vw;
+  padding: 0.732vw 0vw 0.732vw 0vw;
+  cursor: url(../img/ns.cur), auto;
+}
+.free {
+  display: block;
+}
+.trial {
+  display: none;
+}
+.basic {
+  display: none;
+}
+.advanced {
+  display: none;
+}
+.pro {
+  display: none;
+}
+.freetext {
+  display: block;
+  margin-top: 1.245vw;
+  padding: 0.22vw;
+  cursor: url(../img/ns.cur), auto;
+}
+.trialtext {
+  display: none;
+  margin-top: 1.245vw;
+  padding: 0.22vw;
+  cursor: url(../img/ns.cur), auto;
+}
+.basictext {
+  display: none;
+  margin-top: 1.245vw;
+  padding: 0.22vw;
+  cursor: url(../img/ns.cur), auto;
+}
+.advancedtext {
+  display: none;
+  margin-top: 1.245vw;
+  padding: 0.22vw;
+  cursor: url(../img/ns.cur), auto;
+}
+.protext {
+  display: none;
+  margin-top: 1.245vw;
+  padding: 0.22vw;
+  cursor: url(../img/ns.cur), auto;
+}
+
+.descriptionprice {
+  font-family: "sans";
+  width: 100%;
+  height: 100%;
+  font-size: 1.098vw;
+}
+
+.descriptionprice {
+  font-size: 1.098vw;
+}
+
+.telegramform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.telegramlabel {
+  margin-top: 1.464vw;
+  font-size: 0.878vw;
+  cursor: url(../img/arrow.cur), auto;
+}
+.telegraminput {
+  padding: 0.366vw;
+  margin-top: 0.366vw;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0.073vw solid rgba(223, 139, 219, 0.8);
+  border-radius: 0.366vw;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0vw 0vw 0.22vw rgba(223, 139, 219, 0.8);
+  width: 10.981vw;
+  height: 1.098vw;
+  cursor: url(../img/ns.cur), auto;
+}
+.telegraminput::placeholder {
+  color: rgba(255, 255, 255, 0.349);
+  font-size: 1.098vw;
+}
+.telegramsubmit {
+  padding: 0.366vw 1.464vw;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: rgb(245, 245, 245);
+  cursor: url(../img/link.cur), auto;
+  font-size: 1.098vw;
+}
+.telegraminput:hover {
+  border: 0.073vw solid rgba(223, 139, 219, 1);
+  transform: scale(1.03);
+}
+
+.telegraminput:focus {
+  border: 0.073vw solid rgba(223, 139, 219, 1);
+  transform: scale(1.03);
+  box-shadow: 0vw 0vw 0.22vw white;
+}
+
+/* function filling */
+.art2 {
+  width: 44%;
+  height: 75.5%;
+  margin-top: 6%;
+  margin-left: 2%;
+  flex-grow: 1;
+}
+.art2::before {
+  content: "";
+  position: absolute;
+  top: 10.5vw;
+  left: 4.5vw;
+  width: 33vw;
+  height: 33vw;
+  border: 0.439vw solid rgba(76, 76, 76, 0.7);
+  border-radius: 100%;
+  z-index: -1;
+  clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 10% 100%);
+  backdrop-filter: blur(0.293vw);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.artimg2 {
+  width: 89%;
+  height: auto;
+  margin-left: 6.5%;
+  border-radius: 4.392vw;
+  margin-top: -10%;
+}
+
+.maintextdiv2 {
+  width: 60%;
+  height: 76.5%;
+  margin-top: 11%;
+  margin-right: 6.5%;
+  text-align: center;
+  flex-grow: 1;
+  color: white;
+  font-family: "sans";
+  font-size: 1.37vw;
+}
+.maintextvlarm2 {
+  font-family: "minecraft";
+  color: white;
+  font-size: 3.743vw;
+  cursor: url(../img/ns.cur), auto;
+  margin-bottom: 2.5%;
+  text-shadow: 0vw 0vw 0.073vw black;
+}
+
+.buybutton2 {
+  background-color: red;
+  display: block;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 3%;
+  padding-top: 0.439vw;
+  padding-bottom: 0.439vw;
+  border-radius: 0.586vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.22vw solid rgba(223, 139, 219, 0.8);
+  transform: scale(1);
+  backdrop-filter: blur(0.146vw);
+  transition: all 0.3s ease-in-out;
+  cursor: url("../img/link.cur"), auto;
+}
+
+.buybutton2:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 0.22vw solid rgba(223, 139, 219, 1);
+}
+
+.textbuy2 {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-size: 2.562vw;
+  padding: 0.586vw 5.124vw 0.586vw 5.124vw;
+  font-family: "sans";
+  transition: all 0.3s ease-in-out;
+  cursor: url("../img/link.cur"), auto;
+  text-shadow: 0vw 0vw 0.146vw black;
+}
+
+.buybutton2:hover .textbuy2 {
+  color: rgb(255, 255, 255);
+}
+
+/* adaptation */
+@media (max-width: 767px) {
+  .maintextvlarm {
+    font-size: 6.743vw;
+  }
+  .maintextdiv {
+    font-size: 3.37vw;
+    margin-right: 2.5%;
+    margin-top: 20%;
+  }
+  .art {
+    display: none;
+  }
+  .textbuy {
+    font-size: 6.562vw;
+  }
+  .maintextvlarm2 {
+    font-size: 6.743vw;
+  }
+  .maintextdiv2 {
+    font-size: 2.6vw;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-top: 20%;
+  }
+  .art2 {
+    display: none;
+  }
+  .textbuy2 {
+    font-size: 5.562vw;
+  }
+  .tabble {
+    width: 85.264vw;
+    height: 90.603vw;
+  }
+  .tabblemaindiv {
+    font-size: 2.978vw;
+    padding: 2.732vw 2vw 2.732vw 2vw;
+  }
+
+  .pricesdiv {
+    margin: 3.098vw 2.732vw 3.098vw 2.732vw;
+    padding: 3.146vw;
+  }
+  .prices {
+    font-size: 3.464vw;
+  }
+
+  .value {
+    font-size: 1.732vw;
+    padding-right: 2.146vw;
+  }
+
+  .mainpricetextdiv {
+    font-size: 2.978vw;
+    padding: 2.732vw 2vw 2.732vw 2vw;
+  }
+  .freetext {
+    margin-top: 3.245vw;
+    padding: 2.22vw;
+  }
+  .trialtext {
+    margin-top: 3.245vw;
+    padding: 2.22vw;
+  }
+  .basictext {
+    margin-top: 3.245vw;
+    padding: 2.22vw;
+  }
+  .advancedtext {
+    margin-top: 3.245vw;
+    padding: 2.22vw;
+  }
+  .protext {
+    margin-top: 3.245vw;
+    padding: 2.22vw;
+  }
+
+  .descriptionprice {
+    font-size: 2.598vw;
+  }
+
+  .descriptionprice {
+    font-size: 2.598vw;
+  }
+
+  .telegramlabel {
+    margin-top: 1.464vw;
+    font-size: 2.878vw;
+  }
+  .telegraminput {
+    padding: 2.366vw;
+    margin-top: 1.366vw;
+    margin-bottom: 1.366vw;
+    width: 25.981vw;
+    height: 1.598vw;
+  }
+  .telegraminput::placeholder {
+    font-size: 2.598vw;
+  }
+  .telegramsubmit {
+    padding: 0.366vw 1.464vw;
+    font-size: 2.598vw;
+  }
+}

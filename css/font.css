@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "minecraft";
+  src: url("../font/Minecrafter.Alt_.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "sans";
+  src: url("../font/DroidSans.ttf") format(truetype);
+}

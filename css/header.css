@@ -1,0 +1,169 @@
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  z-index: 2;
+  box-shadow: 0 0.146vw 0.293vw rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  float: left;
+  margin-left: 0.366vw;
+  height: 2.928vw;
+  width: auto;
+  margin-top: 0.366vw;
+  margin-bottom: 0.366vw;
+  color: white;
+  font-family: "minecraft";
+  font-size: 1.464vw;
+  cursor: url(../img/link.cur), auto;
+}
+.logodiv {
+  margin-left: 6vw;
+}
+.fiolcolor {
+  color: rgb(223, 139, 219);
+}
+
+nav {
+  float: left;
+  margin-left: 1.098vw;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1.83vw;
+}
+
+nav a {
+  display: block;
+  color: rgb(212, 212, 212);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.732vw;
+  margin-top: 0.366vw;
+  margin-bottom: 0.366vw;
+  font-size: 1.318vw;
+  transition: all 0.3s ease-in-out;
+  font-family: "sans", sans-serif;
+  cursor: url(../img/link.cur), auto;
+}
+nav a:hover {
+  color: rgb(232, 232, 232);
+}
+
+.social {
+  float: right;
+  margin-right: 6vw;
+  margin-top: 0.952vw;
+}
+
+.social a {
+  display: inline-block;
+  margin-left: 0.732vw;
+  color: rgb(212, 212, 212);
+  text-decoration: none;
+  font-size: 0.732vw;
+  cursor: url(../img/link.cur), auto;
+}
+
+.social i {
+  line-height: 0.732vw;
+}
+.socialimg {
+  height: 1.83vw;
+  width: auto;
+  filter: saturate(35%);
+  transition: all 0.3s ease-in-out;
+}
+.socialimgds {
+  height: 1.903vw;
+  width: auto;
+  filter: saturate(35%);
+  transition: all 0.3s ease-in-out;
+}
+
+.socialimg:hover {
+  filter: saturate(80%);
+}
+
+.socialimgds:hover {
+  filter: saturate(115%);
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  text-align: center;
+  box-shadow: 0.293vw 0.146vw 0 rgba(0, 0, 0, 0.1);
+}
+
+.logofooter {
+  display: inline-block;
+}
+
+.logofooter img {
+  vertical-align: middle;
+  margin-top: 0.166vw;
+  margin-bottom: 0.166vw;
+  height: 1.928vw;
+}
+
+.logofooter h1 {
+  display: inline-block;
+  font-size: 0.964vw;
+  vertical-align: middle;
+  color: rgb(212, 212, 212);
+}
+
+.logofooter h1::after {
+  content: "(© 2023)";
+  font-size: 0.564vw;
+  vertical-align: bottom;
+  margin-left: 0.2vw;
+}
+
+/* adaptation */
+
+@media (max-width: 767px) {
+  header {
+    height: 8vw;
+  }
+  .social {
+    display: none;
+  }
+
+  .logo {
+    font-size: 3.464vw;
+    height: 5.928vw;
+    width: auto;
+  }
+  nav a {
+    font-size: 3.318vw;
+    margin-top: 1.366vw;
+  }
+
+  .logofooter img {
+    height: 2.928vw;
+  }
+
+  .logofooter h1 {
+    font-size: 1.964vw;
+  }
+
+  .logofooter h1::after {
+    font-size: 1vw;
+  }
+}

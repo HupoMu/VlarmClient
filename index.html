@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VlarmClient</title>
+    <!-- css styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+  </head>
+  <body>
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+    <!-- header -->
+    <header>
+      <div class="logodiv">
+        <img src="img/logo.png" class="logo" />
+        <h1 class="logo"><span class="fiolcolor">Vlarm</span><br />Client</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#main">Главная</a></li>
+          <li><a href="#function">Функции</a></li>
+          <li><a onclick="showPopup()">Купить</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="https://vk.com/id0" target="_blank"
+          ><img src="img/vk.png" class="socialimg" alt=""
+        /></a>
+        <a href="https://t.me/b1ocked" target="_blank"
+          ><img src="img/tg.png" class="socialimg" alt=""
+        /></a>
+        <a href="https://discord.com/" target="_blank"
+          ><img src="img/ds.png" class="socialimgds" alt=""
+        /></a>
+      </div>
+    </header>
+    <!-- filling -->
+    <div class="background"></div>
+    <div class="container" id="main">
+      <div class="maintextdiv">
+        <h1 class="maintextvlarm">
+          <span class="fiolcolor">Vlarm</span>Client
+        </h1>
+        <p class="cursorns">
+          <b
+            >Мощный и инновационный чит-клиент который работает на новейшей
+            версии 1.20.1 VlarmClient предлагает вам более 100 функций и
+            уникальных модулей с обходом с самых популярных античитов
+            <br />которые стоят на 90% серверов<br />VlarmClient обеспечивает
+            высокий уровень безопасности, чтобы вы могли наслаждаться игрой без
+            опасений. Наша команда разработчиков постоянно обновляет и
+            совершенствует клиент, <br />чтобы гарантировать защиту от банов и
+            обнаружения.<br />Благодаря гибкости VlarmClient вы сможете легко
+            настроить и настроить чит-клиент под свои потребности, даже если вы
+            новичок в использовании подобного программного обеспечения.</b
+          >
+        </p>
+        <div class="buybutton">
+          <a onclick="showPopup()" class="textbuy">
+            <b>Купить</b>
+          </a>
+        </div>
+      </div>
+      <div class="art">
+        <img src="img/art.png" alt="" class="artimg" />
+      </div>
+    </div>
+    <div class="container" id="function">
+      <div class="art2">
+        <img src="img/art2.png" alt="" class="artimg2" />
+      </div>
+      <div class="maintextdiv2">
+        <h1 class="maintextvlarm2">
+          <span class="fiolcolor">Vlarm</span>Client
+        </h1>
+        <p class="cursorns">
+          <b> Имеет более 9 уникальных функций и модулей таких как: </b><br />
+          ● <b>DebugEnchant</b> - Зачарование предметов без использования
+          опыта.<br />
+          ● <b>Suicide</b> - автоматическое убийство своего персонажа в игре.<br />
+          ● <b>AutoEnchant</b> - зачаровывает вещь на любое выбранное вами
+          зачарование.<br />
+          ● <b>UndEffect</b> - игнорирует негативные эффекты наложенные на
+          вас.<br />
+          ● <b>AttackCrystal</b> - подкидывает игрока взрывая его кристаллом.<br />
+          ● <b>UpVlarm</b> - автоматическое обновление клиента.<br />
+          ● <b>Optimyzer</b> - удаляет некоторые сущности оптимизируя клиент на
+          слабых пк.<br />
+          ● <b>ElytraSwap</b> - Отлетает на элитрах при минимальном здоровье.
+          <br />
+          ● <b>VlarmSupport</b> - техподдержка интегрированная в игру <br /><b
+            >VlarmClient имеет также более 100 классических настраиваемых
+            функций</b
+          >
+        </p>
+        <div class="buybutton">
+          <a href="https://b1ocked.t.me" target="_blank" class="textbuy2">
+            <b>Все функции</b>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="logofooter">
+        <img src="img/logo.png" alt="Логотип сайта" />
+        <h1>Все права не защищены</h1>
+      </div>
+    </footer>
+    <!-- Pop-up table -->
+    <div class="overlay" onclick="hidePopup()"></div>
+    <div class="tabble">
+      <div class="tabblecontainer">
+        <div class="tabblediv">
+          <div class="tabblemaindiv">
+            <h1 class="tabblemaintext">
+              <span class="fiolcolor">Price</span>List
+            </h1>
+          </div>
+          <div class="pricesdiv">
+            <a onclick="hidefree()" class="prices"><b>Free</b></a>
+            <p class="value">0₽/день</p>
+          </div>
+          <div class="pricesdiv">
+            <a onclick="hidetrial()" class="prices"><b>Trial</b></a>
+            <p class="value">70₽/неделя</p>
+          </div>
+          <div class="pricesdiv">
+            <a onclick="hidebasic()" class="prices"><b>Basic</b></a>
+            <p class="value">170₽/месяц</p>
+          </div>
+          <div class="pricesdiv">
+            <a onclick="hideadvance()" class="prices"><b>Advance</b></a>
+            <p class="value">570₽/год</p>
+          </div>
+          <div class="pricesdiv">
+            <a onclick="hidepro()" class="prices"><b>Pro</b></a>
+            <p class="value">1070₽/навсегда</p>
+          </div>
+        </div>
+        <div class="pricetext">
+          <div class="mainpricetextdiv">
+            <h1 class="free">Free</h1>
+            <h1 class="trial">Trial</h1>
+            <h1 class="basic">Basic</h1>
+            <h1 class="advanced">Advanced</h1>
+            <h1 class="pro">Pro</h1>
+          </div>
+          <div class="descriptionprice">
+            <div class="freetext">
+              <p>
+                <b
+                  >Приобретая подписку FREE вы получаете<br />
+                  доступ к чит-клиенту VlarmFree<br />
+                  В подписку входит:<br /><br />◦ 53 функции ◦<br />◦ 2
+                  уникальных модуля ◦<br />◦ Поддержка 24/7 ◦<br />◦ Клиент
+                  Vlarm ◦<br />◦ Подписка VlarmFree ◦ <br /><br />Покупая данную
+                  подписку VlarmClient не несёт ответсвенности за ваши действия,
+                  данный чит-клиент преднозначен для ознакомления и тестировки
+                  анти-читов</b
+                >
+              </p>
+              <form class="telegramform">
+                <label for="telegram-link" class="telegramlabel"
+                  >Введите ссылку/тег Telegram</label
+                >
+                <input
+                  type="text"
+                  id="telegram-link"
+                  name="telegram-link"
+                  required
+                  class="telegraminput"
+                  placeholder="t.me/b1ocked"
+                />
+                <button type="submit" class="telegramsubmit">
+                  Подтвердить
+                </button>
+              </form>
+            </div>
+            <div class="trialtext">
+              <p>
+                <b
+                  >Приобретая подписку TRIAL вы получаете<br />
+                  доступ к чит-клиенту VlarmTrial<br />
+                  В подписку входит:<br /><br />◦ 73 функции ◦<br />◦ 4
+                  уникальных модуля ◦<br />◦ Поддержка 24/7 ◦<br />◦ Клиент
+                  Vlarm ◦<br />◦ Подписка VlarmTrial ◦ <br /><br />Покупая
+                  данную подписку VlarmClient не несёт ответсвенности за ваши
+                  действия, данный чит-клиент преднозначен для ознакомления и
+                  тестировки анти-читов</b
+                >
+              </p>
+              <form class="telegramform">
+                <label for="telegram-link" class="telegramlabel"
+                  >Введите ссылку/тег Telegram</label
+                >
+                <input
+                  type="text"
+                  id="telegram-link"
+                  name="telegram-link"
+                  required
+                  class="telegraminput"
+                  placeholder="t.me/b1ocked"
+                />
+                <button type="submit" class="telegramsubmit">
+                  Подтвердить
+                </button>
+              </form>
+            </div>
+            <div class="basictext">
+              <p>
+                <b
+                  >Приобретая подписку BASIC вы получаете<br />
+                  доступ к чит-клиенту VlarmBasic<br />
+                  В подписку входит:<br /><br />◦ 103 функции ◦<br />◦ 6
+                  уникальных модуля ◦<br />◦ Поддержка 24/7 ◦<br />◦ Клиент
+                  Vlarm ◦<br />◦ Подписка VlarmBasic ◦ <br /><br />Покупая
+                  данную подписку VlarmClient не несёт ответсвенности за ваши
+                  действия, данный чит-клиент преднозначен для ознакомления и
+                  тестировки анти-читов</b
+                >
+              </p>
+              <form class="telegramform">
+                <label for="telegram-link" class="telegramlabel"
+                  >Введите ссылку/тег Telegram</label
+                >
+                <input
+                  type="text"
+                  id="telegram-link"
+                  name="telegram-link"
+                  required
+                  class="telegraminput"
+                  placeholder="t.me/b1ocked"
+                />
+                <button type="submit" class="telegramsubmit">
+                  Подтвердить
+                </button>
+              </form>
+            </div>
+            <div class="advancedtext">
+              <p>
+                <b
+                  >Приобретая подписку ADVANCE вы получаете<br />
+                  доступ к чит-клиенту VlarmAdvance<br />
+                  В подписку входит:<br /><br />◦ 103 функции ◦<br />◦ 6
+                  уникальных модуля ◦<br />◦ Поддержка 24/7 ◦<br />◦ Клиент
+                  Vlarm ◦<br />◦ Подписка VlarmAdvance ◦ <br /><br />Покупая
+                  данную подписку VlarmClient не несёт ответсвенности за ваши
+                  действия, данный чит-клиент преднозначен для ознакомления и
+                  тестировки анти-читов</b
+                >
+              </p>
+              <form class="telegramform">
+                <label for="telegram-link" class="telegramlabel"
+                  >Введите ссылку/тег Telegram</label
+                >
+                <input
+                  type="text"
+                  id="telegram-link"
+                  name="telegram-link"
+                  required
+                  class="telegraminput"
+                  placeholder="t.me/b1ocked"
+                />
+                <button type="submit" class="telegramsubmit">
+                  Подтвердить
+                </button>
+              </form>
+            </div>
+            <div class="protext">
+              <p>
+                <b
+                  >Приобретая подписку PRO вы получаете<br />
+                  доступ к чит-клиенту VlarmPro<br />
+                  В подписку входит:<br /><br />◦ 103 функции ◦<br />◦ 7
+                  уникальных модуля ◦<br />◦ Поддержка 24/7 ◦<br />◦ Клиент
+                  Vlarm ◦<br />◦ Подписка VlarmPro ◦ <br /><br />Покупая данную
+                  подписку VlarmClient не несёт ответсвенности за ваши действия,
+                  данный чит-клиент преднозначен для ознакомления и тестировки
+                  анти-читов</b
+                >
+              </p>
+              <form class="telegramform">
+                <label for="telegram-link" class="telegramlabel"
+                  >Введите ссылку/тег Telegram</label
+                >
+                <input
+                  type="text"
+                  id="telegram-link"
+                  name="telegram-link"
+                  required
+                  class="telegraminput"
+                  placeholder="t.me/b1ocked"
+                />
+                <button type="submit" class="telegramsubmit">
+                  Подтвердить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

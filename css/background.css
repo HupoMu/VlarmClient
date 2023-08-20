@@ -1,0 +1,18 @@
+/* main background */
+
+.background {
+  position: fixed;
+  width: 100.5%;
+  height: 100.5%;
+  background-color: black;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0.3;
+  color: white;
+  z-index: -1;
+}
